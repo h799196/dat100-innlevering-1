@@ -12,9 +12,10 @@ public class Oppgave01 {
 		double trinn4 = 937900;
 		double trinn5 = 1350000;
 		
-		double inntekt = 2000000;
+		double inntekt = 1000000;
 		
 		if (inntekt < trinn1) {
+			
 			System.out.println("ingen skatt");}
 		
 		else if (inntekt > trinn1 && inntekt <= trinn2) {
