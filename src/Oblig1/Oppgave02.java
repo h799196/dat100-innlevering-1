@@ -1,5 +1,7 @@
 package Oblig1;
 
+import javax.swing.JOptionPane;
+
 public class Oppgave02 {
 
 	public static void main(String[] args) {
@@ -12,7 +14,9 @@ public class Oppgave02 {
 		double trinn4 = 937900;
 		double trinn5 = 1350000;
 		
-		double inntekt = 2000000;
+		String melding = "Skriv inn inntekt";
+		
+		double inntekt = Integer.parseInt(JOptionPane.showInputDialog(melding));
 		
 		if (inntekt < trinn1) {
 			
