@@ -10,26 +10,27 @@ public class Oppgave01 {
 		
 		int poengsum = Integer.parseInt(JOptionPane.showInputDialog(melding));
 		
-		if (poengsum<39 && poengsum>=0) {	
+		if (poengsum < 0 && poengsum >100) {
+			System.out.print("Ugyldig verdi");}
+			
+		else if (poengsum<39) {	
 			System.out.print("karakter F ");
 		}
-		else if (poengsum<49 && poengsum>=0) {
+		else if (poengsum<49) {
 			System.out.print("karakter E ");
 		}
-		else if (poengsum<59 && poengsum>=0) {
+		else if (poengsum<59) {
 			System.out.print("karakter D ");
 		}
-		else if (poengsum<79 && poengsum>=0) {
+		else if (poengsum<79) {
 			System.out.print("karakter C ");
 		}
-		else if (poengsum<89 && poengsum>=0) {
+		else if (poengsum<89) {
 			System.out.print("karakter B ");
 		}
-		else if (poengsum<100 && poengsum>=0) {
+		else
 			System.out.print("karakter A ");
 		}
-		else { System.out.print("Ugyldig verdi");
-
-		}
 	}
-}
+
+
