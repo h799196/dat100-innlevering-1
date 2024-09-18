@@ -1,47 +1,35 @@
 package Oblig1;
 
+import javax.swing.JOptionPane;
+
 public class Oppgave01 {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Trinskatt du må betale ");
+		String melding = "Skriv inn poengsum 0-100 ";
 		
-		double trinn1 = 208051;
-		double trinn2 = 292850;
-		double trinn3 = 670000;
-		double trinn4 = 937900;
-		double trinn5 = 1350000;
+		int poengsum = Integer.parseInt(JOptionPane.showInputDialog(melding));
 		
-		double inntekt = 2000000;
-		
-		if (inntekt < trinn1) {
-			
-			System.out.println("ingen skatt");}
-		
-		else if (inntekt > trinn1 && inntekt <= trinn2) {
-			
-			System.out.print((inntekt-trinn1)*0.017);}
-		
-		else if (inntekt > trinn2 && inntekt <= trinn3) {
-			
-			System.out.print(((trinn2-trinn1)*0.017)+(inntekt-trinn2)*0.04);}
-		
-		else if (inntekt > trinn3 && inntekt <= trinn4) {
-			
-			System.out.print((trinn2-trinn1*0.017)+((trinn3-trinn2)*0.04)+(inntekt-trinn3)*0.136);}
-		
-		else if (inntekt > trinn4 && inntekt <= trinn5) {
-			
-			System.out.print(((trinn2-trinn1)*0.017)+((trinn3-trinn2)*0.04)+((trinn4-trinn3)*0.136)+(inntekt-trinn4)*0.166);}
-		
-		else {
-			
-			System.out.print(((trinn2-trinn1)*0.017)+((trinn3-trinn2)*0.04)+((trinn4-trinn3)*0.136)+((trinn5-trinn4)*0.166)+((inntekt-trinn5)*0.176));}
-		
-		System.out.print("kr");
-	}
-	
-}
-			
-	
+		if (poengsum<39 && poengsum>=0) {	
+			System.out.print("karakter F ");
+		}
+		else if (poengsum<49 && poengsum>=0) {
+			System.out.print("karakter E ");
+		}
+		else if (poengsum<59 && poengsum>=0) {
+			System.out.print("karakter D ");
+		}
+		else if (poengsum<79 && poengsum>=0) {
+			System.out.print("karakter C ");
+		}
+		else if (poengsum<89 && poengsum>=0) {
+			System.out.print("karakter B ");
+		}
+		else if (poengsum<100 && poengsum>=0) {
+			System.out.print("karakter A ");
+		}
+		else { System.out.print("Ugyldig verdi");
 
+		}
+	}
+}
