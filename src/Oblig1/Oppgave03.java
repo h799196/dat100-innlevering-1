@@ -1,5 +1,7 @@
 package Oblig1;
 
+import java.math.BigInteger;
+
 import javax.swing.JOptionPane;
 
 public class Oppgave03 {
@@ -11,7 +13,7 @@ public class Oppgave03 {
 		int n = Integer.parseInt(JOptionPane.showInputDialog(melding));
 		
 		int i = 1;
-		int f = 1;
+		long f = 1;
 		
 		System.out.print(n+"! = ");
 		
