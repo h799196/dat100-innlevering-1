@@ -8,9 +8,9 @@ public class Oppgave01 {
 		
 		int i;
 		
-		for (i=1;i<=3;i++) {
-	
 		String melding = "Skriv inn poengsum 0-100 ";
+		
+		for (i=1;i<=10;i++) {
 		
 		int poengsum = Integer.parseInt(JOptionPane.showInputDialog(melding));
 		
