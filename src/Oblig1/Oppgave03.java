@@ -1,7 +1,5 @@
 package Oblig1;
 
-import java.math.BigInteger;
-
 import javax.swing.JOptionPane;
 
 public class Oppgave03 {
